@@ -1,0 +1,15 @@
+{
+    "name": "primecheck.piotrzpl",
+    "description": "Quickly check if a number is a prime or not",
+    "architecture": "@CLICK_ARCH@",
+    "title": "PrimeCheck",
+    "hooks": {
+        "PrimeCheck": {
+            "apparmor": "PrimeCheck.apparmor",
+            "desktop":  "PrimeCheck.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Piotr Lange <zpl20052020@protonmail.ch>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
