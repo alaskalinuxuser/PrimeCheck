@@ -106,7 +106,7 @@ MainView {
 			        font.bold: true
 			        anchors.centerIn: parent
 			        color: "#111"
-			        text: "Check"
+			        text: i18n.tr("Check")
 			    }
 			
 			    MouseArea {
@@ -131,10 +131,10 @@ MainView {
 					python.call("fpc.isPrime", [ textField.text ], function ( result ) {
 					var isValid = result;
 					if (isValid) {
-					isPrimeText.text = textField.text + " is a prime number.";
+					isPrimeText.text = textField.text + i18n.tr(" is a prime number.");
 					isPrimeText.color = "#00fe00";
 					} else { 
-					isPrimeText.text = textField.text + " is not a prime number.";
+					isPrimeText.text = textField.text + i18n.tr(" is not a prime number.");
 					isPrimeText.color = "#e81e25";
 					}
 				})
@@ -154,7 +154,7 @@ MainView {
 			    
 				Label {
 		        id: isPrimeText
-		        text: "Enter a number"
+		        text: i18n.tr("Enter a number")
 		        font.pixelSize: units.gu(3)
 		        font.bold: true
 		        anchors.centerIn: parent
