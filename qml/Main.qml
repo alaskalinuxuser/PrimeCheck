@@ -128,16 +128,19 @@ MainView {
 				height: parent.height / 6
 				width: parent.width / 2
 				onClicked: {
-					python.call("fpc.isPrime", [ textField.text ], function ( result ) {
-					var isValid = result;
-					if (isValid) {
-					isPrimeText.text = textField.text + i18n.tr(" is a prime number.");
-					isPrimeText.color = "#00fe00";
-					} else { 
-					isPrimeText.text = textField.text + i18n.tr(" is not a prime number.");
-					isPrimeText.color = "#e81e25";
+					if (textField.text != "") {
+						python.call("fpc.isPrime", [ textField.text ], function ( result ) {
+							var isValid = result;
+							if (isValid) {
+								isPrimeText.text = textField.text + i18n.tr(" is a prime number.");
+								isPrimeText.color = "#00fe00";
+							}
+							else { 
+								isPrimeText.text = textField.text + i18n.tr(" is not a prime number.");
+								isPrimeText.color = "#e81e25";
+							}
+						})
 					}
-				})
 				}
 			}
 			Rectangle {

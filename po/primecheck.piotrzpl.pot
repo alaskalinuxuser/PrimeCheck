@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: primecheck.piotrzpl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 14:04+0000\n"
+"POT-Creation-Date: 2022-08-15 14:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,14 +54,14 @@ msgstr ""
 msgid "Check"
 msgstr ""
 
-#: ../qml/Main.qml:134
+#: ../qml/Main.qml:135
 msgid " is a prime number."
 msgstr ""
 
-#: ../qml/Main.qml:137
+#: ../qml/Main.qml:139
 msgid " is not a prime number."
 msgstr ""
 
-#: ../qml/Main.qml:157
+#: ../qml/Main.qml:160
 msgid "Enter a number"
 msgstr ""
