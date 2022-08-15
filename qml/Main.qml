@@ -180,7 +180,7 @@ MainView {
 					}
 					Label {
 						id: canBeDev
-						text: i18n.tr("")
+						text: ""
 						font.pixelSize: units.gu(3)
 						font.bold: true
 						horizontalAlignment: Text.AlignHCenter

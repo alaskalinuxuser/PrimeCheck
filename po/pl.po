@@ -62,14 +62,18 @@ msgstr "Motyw"
 msgid "Check"
 msgstr "Sprawdź"
 
-#: ../qml/Main.qml:134
+#: ../qml/Main.qml:136
 msgid " is a prime number."
 msgstr " jest liczbą pierwszą."
 
-#: ../qml/Main.qml:137
+#: ../qml/Main.qml:141
 msgid " is not a prime number."
 msgstr " nie jest liczbą pierwszą."
 
-#: ../qml/Main.qml:157
+#: ../qml/Main.qml:144
+msgid "It is divisible by "
+msgstr "Jest podzielna przez "
+
+#: ../qml/Main.qml:174
 msgid "Enter a number"
 msgstr "Wpisz liczbę"
