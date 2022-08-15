@@ -19,7 +19,7 @@ def isPrime(num):
 	if num > 1:
 		for i in range(2, num//2 + 1):
 			if (num % i) == 0:
-				return False
+				return [False, i]
 	else:
-		return False
-	return True
+		return [False, 0]
+	return [True, 0]

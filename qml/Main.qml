@@ -130,14 +130,22 @@ MainView {
 				onClicked: {
 					if (textField.text != "") {
 						python.call("fpc.isPrime", [ textField.text ], function ( result ) {
-							var isValid = result;
-							if (isValid) {
+							var _isPrime = result[0];
+							var _numberThatDevides = result[1];
+							if (_isPrime) {
 								isPrimeText.text = textField.text + i18n.tr(" is a prime number.");
 								isPrimeText.color = "#00fe00";
+								canBeDev.text = "";
 							}
 							else { 
 								isPrimeText.text = textField.text + i18n.tr(" is not a prime number.");
 								isPrimeText.color = "#e81e25";
+								if (_numberThatDevides != 0) {
+									canBeDev.text = i18n.tr("It is divisible by ") + _numberThatDevides;
+								}
+								else {
+									canBeDev.text = "";
+								}
 							}
 						})
 					}
@@ -145,7 +153,7 @@ MainView {
 			}
 			Rectangle {
 			    anchors {
-			            topMargin: units.gu(1);
+			            topMargin: units.gu(5);
 			            top: textField.bottom
 			            left: parent.left
 			            leftMargin: units.gu(1);
@@ -155,14 +163,32 @@ MainView {
 			        }
 			    color: backgroundColor
 			    
-				Label {
-		        id: isPrimeText
-		        text: i18n.tr("Enter a number")
-		        font.pixelSize: units.gu(3)
-		        font.bold: true
-		        anchors.centerIn: parent
-		        
-			    }
+				Column {
+					anchors {
+						left: parent.left
+						right: parent.right
+						margins: units.gu(2)
+					}
+					Label {
+						id: isPrimeText
+						text: i18n.tr("Enter a number")
+						font.pixelSize: units.gu(3)
+						font.bold: true
+						horizontalAlignment: Text.AlignHCenter
+						width: parent.width
+						//anchors.centerIn: parent
+					}
+					Label {
+						id: canBeDev
+						text: i18n.tr("")
+						font.pixelSize: units.gu(3)
+						font.bold: true
+						horizontalAlignment: Text.AlignHCenter
+						width: parent.width
+						color: "#e81e25";
+						//anchors.centerIn: parent
+					}
+				}
 	        
 	        }
 	
