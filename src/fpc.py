@@ -14,12 +14,26 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-def isPrime(num):
-	num = int(num)
-	if num > 1:
-		for i in range(2, num//2 + 1):
-			if (num % i) == 0:
-				return [False, i]
-	else:
+def isPrime(numberToCheck):
+	numberToCheck = int(numberToCheck)
+
+	if numberToCheck <= 1:
 		return [False, 0]
+	if numberToCheck == 2:
+		return [True, 0]
+	if numberToCheck == 3:
+		return [True, 0]
+	if numberToCheck % 2 == 0:
+		return [False, 2]
+	if numberToCheck % 3 == 0:
+		return [False, 3]
+	
+	lim = int(numberToCheck**(1/2)) + 1
+
+	for iii in range(4, lim, 6):
+		if numberToCheck % iii == 0:
+			return [False, iii]
+		if numberToCheck % (iii + 2) == 0:
+			return [False, iii + 2]
+
 	return [True, 0]
