@@ -25,30 +25,60 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/About.qml:26 ../qml/About.qml:36 ../qml/Main.qml:70
+#: ../qml/About.qml:26 ../qml/About.qml:37 ../qml/Main.qml:70
 msgid "About"
 msgstr "O programie"
 
-#: ../qml/About.qml:36
+#: ../qml/About.qml:37
 msgid "Credits"
 msgstr "Podziękowania"
 
 #. TRANSLATORS: App version number e.g Version 1.0.0
-#: ../qml/About.qml:89
+#: ../qml/About.qml:90
 msgid "Version %1"
 msgstr "Wersja %1"
 
-#: ../qml/About.qml:111
+#: ../qml/About.qml:112
 msgid "Released under the terms of %1"
 msgstr "Program został wydany pod licencją %1"
 
-#: ../qml/About.qml:122
+#: ../qml/About.qml:123
 msgid "Report bugs on %1"
 msgstr "Możliwość zgłoszenia błędów na %1"
 
-#: ../qml/Credits.qml:26 ../qml/Credits.qml:27 ../qml/Credits.qml:28
+#: ../qml/Credits.qml:28 ../qml/Credits.qml:29 ../qml/Credits.qml:30
+#: ../qml/Credits.qml:31
 msgid "Huge thanks to:"
 msgstr "Wielkie podziękowania dla:"
+
+#. TRANSLATORS: Name of a pearson that was important to the project + the reason why he/she was important
+#: ../qml/Credits.qml:28
+msgid "Igor Sobociński - for substantive support"
+msgstr "Igor Sobociński - za wsparcie merytoryczne"
+
+#: ../qml/Credits.qml:29
+msgid "sutani127 - for substantive support"
+msgstr "sutani127 - za wsparcie merytoryczne"
+
+#: ../qml/Credits.qml:30
+msgid "Johan Guerreros - for Vulgry"
+msgstr "Johan Guerreros - za Vulgry"
+
+#: ../qml/Credits.qml:31
+msgid "The UBports Foundation - for Ubuntu Touch"
+msgstr "The UBports Foundation - za Ubuntu Touch"
+
+#: ../qml/Credits.qml:32
+msgid "Anne017 - French"
+msgstr "Anne017 - francuski"
+
+#: ../qml/Credits.qml:32 ../qml/Credits.qml:33
+msgid "Translators:"
+msgstr "Tłumaczenia:"
+
+#: ../qml/Credits.qml:33
+msgid "Piotr Lange - Polish"
+msgstr "Piotr Lange - polski"
 
 #: ../qml/Main.qml:62 PrimeCheck.desktop.in.h:1
 msgid "PrimeCheck"
