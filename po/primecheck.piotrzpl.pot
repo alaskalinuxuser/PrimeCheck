@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: primecheck.piotrzpl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-31 13:53+0000\n"
+"POT-Creation-Date: 2025-09-10 21:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Johan Guerreros - for Vulgry"
 msgstr ""
 
 #: ../qml/Credits.qml:31
-msgid "The UBports Foundation - for Ubuntu Touch"
+msgid "The UBports Foundation - for Lomiri Touch"
 msgstr ""
 
 #: ../qml/Credits.qml:32

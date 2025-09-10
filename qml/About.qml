@@ -15,7 +15,7 @@
  */
 
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Page {
     id: aboutPage
@@ -64,7 +64,7 @@ Page {
                         top: parent.top; left: parent.left; right: parent.right; topMargin: units.gu(5)
                     }
 
-                    UbuntuShape {
+                    LomiriShape {
                         width: Math.min(parent.width/2, parent.height/2)
                         height: width
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -108,7 +108,7 @@ Page {
                             width: parent.width
                             wrapMode: Text.WordWrap
                             horizontalAlignment: Text.AlignHCenter
-                            linkColor: UbuntuColors.blue
+                            linkColor: LomiriColors.blue
                             text: i18n.tr("Released under the terms of %1").arg("<a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">the GNU GPL v3</a>")
                             onLinkActivated: Qt.openUrlExternally(link)
                         }
@@ -119,7 +119,7 @@ Page {
                         wrapMode: Text.WordWrap
                         fontSize: "small"
                         horizontalAlignment: Text.AlignHCenter
-                        linkColor: UbuntuColors.blue
+                        linkColor: LomiriColors.blue
                         text: i18n.tr("Report bugs on %1").arg("<a href=\"https://github.com/PiotrZPL/PrimeCheck/issues\">github.com</a>")
                         onLinkActivated: Qt.openUrlExternally(link)
                     }
@@ -148,6 +148,6 @@ Page {
         orientation: Qt.Horizontal
         snapMode: ListView.SnapOneItem
         currentIndex: aboutPageHeaderSections.selectedIndex
-        highlightMoveDuration: UbuntuAnimation.SlowDuration
+        highlightMoveDuration: LomiriAnimation.SlowDuration
     }
 }

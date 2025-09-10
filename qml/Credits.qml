@@ -15,7 +15,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import "./"
 
 Item {
@@ -28,13 +28,13 @@ Item {
             creditsModel.append({ name: i18n.tr("Igor Sobociński - for substantive support"), title: i18n.tr("Huge thanks to:")})
             creditsModel.append({ name: i18n.tr("sutani127 - for substantive support"), title: i18n.tr("Huge thanks to:"), url: "https://github.com/sutani127"})
             creditsModel.append({ name: i18n.tr("Johan Guerreros - for Vulgry"), title: i18n.tr("Huge thanks to:"), url: "https://launchpad.net/~johangm90" })
-            creditsModel.append({ name: i18n.tr("The UBports Foundation - for Ubuntu Touch"), title: i18n.tr("Huge thanks to:"), url: "https://ubports.com/foundation/ubports-foundation" })
+            creditsModel.append({ name: i18n.tr("The UBports Foundation - for Lomiri Touch"), title: i18n.tr("Huge thanks to:"), url: "https://ubports.com/foundation/ubports-foundation" })
             creditsModel.append({ name: i18n.tr("Anne017 - French"), title: i18n.tr("Translators:"), url: "https://github.com/Anne017" })
             creditsModel.append({ name: i18n.tr("Piotr Lange - Polish"), title: i18n.tr("Translators:"), url: "https://github.com/PiotrZPL" })
         }
     }
 
-    UbuntuListView {
+    LomiriListView {
         id: credits
 
         currentIndex: -1

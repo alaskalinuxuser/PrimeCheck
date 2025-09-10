@@ -15,7 +15,7 @@
  */
 
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
@@ -33,13 +33,13 @@ MainView {
     
     //property list<ContentItem> transferItemList
     //property var contentTransfer
-    property string app_version: "1.1.2"
+    property string app_version: "1.1.3"
 
     
     property var settings: Settings {
         property string primaryColor: "#0169c9"
         property string theme: "Ambiance"
-        onThemeChanged: Theme.name = "Ubuntu.Components.Themes." + settings.theme
+        onThemeChanged: Theme.name = "Lomiri.Components.Themes." + settings.theme
     }
     
     Component {
